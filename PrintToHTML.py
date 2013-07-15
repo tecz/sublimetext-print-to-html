@@ -10,6 +10,7 @@ import textwrap
 import pygments
 import pygments.formatters
 import pygments.lexers
+from pygments.lexers._phpbuiltins import *
 
 with open('wordwrap.js') as f:
     WORD_WRAP_SCRIPT_BLOCK = '\n'.join(['<script>', f.read(), '</script>'])
